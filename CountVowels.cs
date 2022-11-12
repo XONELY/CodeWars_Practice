@@ -1,5 +1,7 @@
-﻿Console.WriteLine("Введите слово, чтобы подсчитать количество гласных");
+﻿while (loop == true){
+Console.WriteLine("Введите слово, чтобы подсчитать количество гласных");
 char[] input = Console.ReadLine().ToLower().ToCharArray();
+if (input == null) Console.WriteLine("Повторите ввод");
 int CountVowels()
 {
     int counting = 0;
@@ -15,6 +17,6 @@ int CountVowels()
 }
 Console.WriteLine(CountVowels());
 Console.ReadKey();
-
+}
 
 
